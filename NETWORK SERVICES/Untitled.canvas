@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"792e22e87f6e60a9","type":"text","text":"10.8.0.1","x":-547,"y":-390,"width":127,"height":60},
+		{"id":"5c399f1f37061ef0","type":"text","text":"10.8.0.2","x":-380,"y":-385,"width":126,"height":50,"color":"1"},
+		{"id":"da2b99ede4d63142","type":"text","text":"10.8.0.6","x":60,"y":-385,"width":127,"height":50},
+		{"id":"28ac90693f09eec8","type":"text","text":"10.8.0.5","x":-111,"y":-390,"width":124,"height":60,"color":"1"},
+		{"id":"55c78c19e7dae180","type":"text","text":"endpoint","x":-119,"y":-620,"width":140,"height":60},
+		{"id":"cf15cb4e4fffb0d4","type":"text","text":"endpoint","x":-387,"y":-620,"width":140,"height":60},
+		{"id":"b6c2d78f45ab6e46","type":"text","text":"client tun0 ","x":54,"y":-620,"width":140,"height":60},
+		{"id":"e961e545a6f6c8f0","type":"text","text":"server tun0 ","x":-553,"y":-620,"width":140,"height":60},
+		{"id":"ed1d262f810328bf","type":"text","text":"VPN Client","x":224,"y":-385,"width":140,"height":50},
+		{"id":"c27256437d9c5ba9","type":"text","text":"10.2.0.155","x":220,"y":-240,"width":148,"height":60},
+		{"id":"c16870a947c6b440","type":"text","text":"internal","x":417,"y":-510,"width":120,"height":60},
+		{"id":"fbe347211ba5396e","type":"text","text":"VPN SERVER         ","x":-756,"y":-390,"width":169,"height":60},
+		{"id":"f3928addb09ec8e1","type":"text","text":"10.2.0.155","x":-745,"y":-240,"width":148,"height":60},
+		{"id":"d0232743f91a193a","type":"text","text":"internal","x":-920,"y":-510,"width":145,"height":60}
+	],
+	"edges":[
+		{"id":"62a26e22131af3f4","fromNode":"28ac90693f09eec8","fromSide":"right","toNode":"da2b99ede4d63142","toSide":"left","color":"1"},
+		{"id":"38bd20998351d2e8","fromNode":"e961e545a6f6c8f0","fromSide":"bottom","toNode":"792e22e87f6e60a9","toSide":"top"},
+		{"id":"1ae149f00297b80d","fromNode":"b6c2d78f45ab6e46","fromSide":"bottom","toNode":"da2b99ede4d63142","toSide":"top"},
+		{"id":"b2f55c6841274cfc","fromNode":"792e22e87f6e60a9","fromSide":"right","toNode":"5c399f1f37061ef0","toSide":"left"},
+		{"id":"d28bd0498aa3e124","fromNode":"5c399f1f37061ef0","fromSide":"right","toNode":"28ac90693f09eec8","toSide":"left","color":"1","label":"tunnel"},
+		{"id":"02314be7db30a917","fromNode":"cf15cb4e4fffb0d4","fromSide":"bottom","toNode":"5c399f1f37061ef0","toSide":"top"},
+		{"id":"0587168c925d9e20","fromNode":"55c78c19e7dae180","fromSide":"bottom","toNode":"28ac90693f09eec8","toSide":"top"},
+		{"id":"70f9875139003c75","fromNode":"ed1d262f810328bf","fromSide":"bottom","toNode":"c27256437d9c5ba9","toSide":"top"},
+		{"id":"2d2e2a78e4158b49","fromNode":"c27256437d9c5ba9","fromSide":"left","toNode":"f3928addb09ec8e1","toSide":"right","label":"public network"},
+		{"id":"4facc36a9e2e09e1","fromNode":"ed1d262f810328bf","fromSide":"right","toNode":"c16870a947c6b440","toSide":"bottom"},
+		{"id":"4f74c3990f862e18","fromNode":"fbe347211ba5396e","fromSide":"left","toNode":"d0232743f91a193a","toSide":"bottom"},
+		{"id":"4d20928f76b3d421","fromNode":"f3928addb09ec8e1","fromSide":"top","toNode":"fbe347211ba5396e","toSide":"bottom"},
+		{"id":"15d44cf5cedb050c","fromNode":"28ac90693f09eec8","fromSide":"left","toNode":"5c399f1f37061ef0","toSide":"right"}
+	]
+}

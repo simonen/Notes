@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"ea294d0dcef410e0","type":"text","text":"server","x":-280,"y":-460,"width":250,"height":60,"color":"5"},
+		{"id":"809d047175cfdd4b","type":"text","text":"public key","x":-720,"y":-280,"width":270,"height":60},
+		{"id":"0de321070a35b134","type":"text","text":"~/.ssh/authorized_keys - client public keys","x":-280,"y":-280,"width":250,"height":60},
+		{"id":"40fba4cb6ed7fe79","type":"text","text":"~/.ssh/known_hosts","x":-720,"y":-560,"width":270,"height":60},
+		{"id":"736406e68df8ded5","type":"text","text":"client","x":-720,"y":-460,"width":270,"height":60,"color":"1"},
+		{"id":"fca5e38475486d47","type":"text","text":"private key","x":-720,"y":-380,"width":270,"height":60}
+	],
+	"edges":[
+		{"id":"b6fb11287460b59b","fromNode":"736406e68df8ded5","fromSide":"right","toNode":"ea294d0dcef410e0","toSide":"left","label":"private key\nhash"},
+		{"id":"a9a63d31ccef4353","fromNode":"809d047175cfdd4b","fromSide":"right","toNode":"0de321070a35b134","toSide":"left","label":"copy over"},
+		{"id":"4697a26849952089","fromNode":"ea294d0dcef410e0","fromSide":"bottom","toNode":"0de321070a35b134","toSide":"top","label":"checks if hash matches the public key"},
+		{"id":"6ea2cf91af962c16","fromNode":"736406e68df8ded5","fromSide":"bottom","toNode":"fca5e38475486d47","toSide":"top"},
+		{"id":"2d1604945d2852d0","fromNode":"fca5e38475486d47","fromSide":"bottom","toNode":"809d047175cfdd4b","toSide":"top"},
+		{"id":"17181c1dcbf0e13a","fromNode":"ea294d0dcef410e0","fromSide":"top","toNode":"40fba4cb6ed7fe79","toSide":"top","label":"ssh_host_*.pub\n(server key)"},
+		{"id":"869cb2dfc9635473","fromNode":"736406e68df8ded5","fromSide":"top","toNode":"40fba4cb6ed7fe79","toSide":"bottom"}
+	]
+}

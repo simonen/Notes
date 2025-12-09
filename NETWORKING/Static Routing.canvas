@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"ecee1d2e39dea926","x":-100,"y":-314,"width":250,"height":208,"type":"text","text":"Transient\nIP: 10.0.7.2\nIP1: 10.0.8.1\nIP2: 10.0.6.1\nipv4.ip_forward=1\n10.0.6.0/24 via 10.0.6.2"},
+		{"id":"f2a3d68cf74ce932","x":-560,"y":-280,"width":250,"height":140,"type":"text","text":"Source\n10.0.7.1\n10.0.8.0/24 via 10.0.7.2"},
+		{"id":"cf83baa8315df7fa","x":360,"y":-305,"width":250,"height":190,"type":"text","text":"Destination\n\nIP 10.0.6.2\nIP: 10.0.8.1\n10.0.7.0/24 via 10.0.6.1\n"},
+		{"id":"c19de6c5503a82ad","x":-560,"y":-60,"width":1170,"height":120,"type":"text","text":"1. PING 10.0.8.1 from Source\n2. Packet exits Source via 10.0.7.2 gateway. \n3. Transient host forwards the packet to the 10.0.6.0/24 network via 10.0.6.2 gateway\n4. Destination Host returns the packet to 10.0.7.1 source via 10.0.6.1 gateway"},
+		{"id":"fab08d258b70b42a","x":-100,"y":-440,"width":250,"height":60,"type":"text","text":"STATIC ROUTING"}
+	],
+	"edges":[
+		{"id":"5f8bc332210ff750","fromNode":"f2a3d68cf74ce932","fromSide":"right","toNode":"ecee1d2e39dea926","toSide":"left","label":"10.0.7.1 - 10.0.7.2"},
+		{"id":"db86359ac7b788ad","fromNode":"ecee1d2e39dea926","fromSide":"right","toNode":"cf83baa8315df7fa","toSide":"left","label":"10.0.6.1 - 10.0.6.2"}
+	]
+}
